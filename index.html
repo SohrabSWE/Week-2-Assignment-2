@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubHall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <section class="nav">
+                <h2 class="logotitle">ClubHall</h2>
+                <div class="navitem">
+                    <p onclick="fetchData('')">Home</p>
+                    <p>About</p>
+                    <p>Contact</p>
+                    <p>Blog</p>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main class="maindiv">
+        <section class="searchSection">
+            <div class="searchField">
+                <input id="searchInput" type="text" placeholder="search player by name">
+                <button id="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </div>
+        </section>
+
+        <!-- loaded players  -->
+        <section class="loadedplayers">
+            <div id="playercard" class="playercard">
+                
+            </div>
+            <div class="selectedPlayers">
+                <div class="titlePlayerSec">
+                    <h4 class="primary-color ">Selected players list:</h4>
+                    <h3 id="counting" class="primary-color counting">0</h3>
+                </div>
+
+                <div id="selectedPlayersMain" class="selectedPlayersMain">
+                    <p class="primary-color">No player selected</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="modalSection">
+            <div id="modalmain" class="modalmain">
+            </div>
+
+        </section>
+        <div id="modalBanner" onclick="closeModal()" class="modalBanner">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <section>
+            <h1>ClubHall</h1>
+            <p style="margin-top: 10px;">Dhaka club, Bangladesh. The team of joy - Playing is health</p>
+            <p>All copyright reserved by Md Sohrab</p>
+        </section>
+    </footer>
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/5d73ebcce2.js" crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="app.js"></script>
+</body>
+</html>
